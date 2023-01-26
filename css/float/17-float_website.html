@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Website</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation bar */
+
+        .horizontal_menu {
+            list-style-type: none;
+            background: grey;
+            overflow: hidden;
+        }
+
+        .horizontal_menu li {
+            float: left;
+            padding: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .horizontal_menu li:not(li:nth-of-type(1)):hover {
+            background-color: black;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+
+        /* Veritical Menu */
+
+        .vertical_menu li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .column {
+            float: left;
+            padding: 20px;
+        }
+
+        .menu {
+            width: 25%;
+        }
+
+        a {
+            margin-bottom: 4px;
+            display: block;
+            padding: 8px;
+            background-color: #eee;
+            text-decoration: none;
+            color: #666;
+        }
+
+        .vertical_menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .vertical_menu li .active {
+            background-color: #008CBA;
+        }
+
+        .vertical_menu li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        /* Contents */
+
+        .content {
+            width: 75%;
+        }
+
+        p {
+            line-height: 1.8em;
+        }
+
+        .heading {
+            background-color: #2196F3;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .clr {
+            clear: both;
+        }
+
+        .footer {
+            padding: 20px;
+            background: grey;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="horizontal_menu">
+        <li class="active">Home</li>
+        <li>News</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ul>
+
+    <div class="column menu">
+        <ul class="vertical_menu">
+            <li><a href="#flight">The Flight</a></li>
+            <li><a class="active" href="#city">The City</a></li>
+            <li><a href="#island">The Island</a></li>
+            <li><a href="#food">The Food</a></li>
+            <li><a href="#people">The People</a></li>
+            <li><a href="#history">The History</a></li>
+            <li><a href="#oceans">The Oceans</a></li>
+        </ul>
+    </div>
+    <div class="column content">
+        <div class="heading">
+            <h1>The City</h1>
+        </div>
+
+        <h1>Chania</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+        <p>You will learn more about responsive web pages in a later chapter.</p>
+
+    </div>
+
+    <div class="clr"></div>
+    <div class="footer">
+        <p>Footer text</p>
+    </div>
+</body>
+</html>
